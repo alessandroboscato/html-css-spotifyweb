@@ -9,6 +9,36 @@ background-color: red;
 height: 100vh;
 }
 
-.footer {
-  
+/* main */
+
+main {
+  height: calc(100% - 80px);
+  width: 100%;
+}
+
+main:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.sidebar {
+  float: left;
+  background-color: #000;
+  width: 300px;
+  height: 100%;
+}
+
+.main-content {
+  float: left;
+  background-color: #141A23;
+  height: 100%;
+  width: calc(100% - 300px)
+}
+
+/* footer */
+.player {
+  background-color: #282828;
+  height: 80px;
 }
