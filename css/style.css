@@ -136,10 +136,11 @@ main::after {
 
 .box {
   text-align: center;
+  width: calc(100% / 6);
 }
 
 .box img {
-  width: 50%;
+  width: 100%;
 }
 
 /* footer */
