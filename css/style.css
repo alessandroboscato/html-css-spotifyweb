@@ -43,7 +43,7 @@ main::after {
   overflow: hidden;
 }
 
-.sidebar .logo, .sidebar .main-nav, .sidebar .secondary-nav, .sidebar .asidebar-bottom {
+.sidebar .logo, .sidebar .main-nav, .sidebar .asidebar-bottom {
   flex-shrink: 0;
 }
 .logo {
