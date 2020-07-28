@@ -9,6 +9,12 @@ background-color: red;
 height: 100vh;
 }
 
+/* MIX */
+
+.list-none {
+  list-style: none;
+}
+
 /* TYPOGRAPHY */
 .logo i {
   font-size: 42px;
@@ -34,33 +40,40 @@ main::after {
 
 .sidebar {
   float: left;
-  background-color: blue;
+  background-color: #000;
   width: 300px;
   height: 100%;
   color: #fff;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  padding-left: 10px;
 }
 
 .sidebar .logo, .sidebar .main-nav, .sidebar .asidebar-bottom {
   flex-shrink: 0;
 }
+
 .logo {
-  /* background: pink; */
   padding: 10px;
 }
 
 .logo i, .logo span {
   vertical-align: middle;
 }
+
 .main-nav {
-  background-color: yellow;
+  line-height: 30px;
+}
+
+.main-nav img, .asidebar-bottom img {
+  width: 10%;
+  padding-right: 5px;
+  vertical-align: middle;
 }
 
 .secondary-nav {
   height: calc(100% - 80px);
-  background: purple;
   overflow: hidden;
 }
 
@@ -69,8 +82,8 @@ main::after {
 }
 .playlist-nav {
   height: 80%;
-background: lightcoral;
-overflow-y: auto;
+  background: lightcoral;
+  overflow-y: auto;
 }
 
 .asidebar-bottom {
