@@ -55,11 +55,14 @@ main::after {
 }
 
 .secondary-nav {
-  height: 100%;
+  height: calc(100% - 80px);
   background: purple;
   overflow: hidden;
 }
 
+.title-nav {
+  height: 80px;
+}
 .playlist-nav {
   height: 80%;
 background: lightcoral;
