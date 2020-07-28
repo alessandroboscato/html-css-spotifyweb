@@ -55,18 +55,18 @@ main::after {
 }
 
 .secondary-nav {
-  background: purple;
   height: 100%;
-  overflow-y: hidden;
+  background: purple;
+  overflow: hidden;
 }
 
 .playlist-nav {
+  height: 80%;
 background: lightcoral;
 overflow-y: auto;
 }
 
 .asidebar-bottom {
-  height: 80px;
   background: grey;
   margin-top: auto;
 }
