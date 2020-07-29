@@ -417,6 +417,17 @@ footer {
   .box {
     width: calc((100% / 2) - 10px);
   }
+
+  .icons_dx {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .player_text {
+    padding-left: 5px;
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 597px) {
@@ -431,5 +442,27 @@ footer {
 
   .main-content {
     width: calc(100% - 70px);
+  }
+}
+
+@media screen and (max-width: 588px) {
+  .icons_dx {
+    margin-left: 0;
+  }
+
+  .music_player img {
+    width: 20%;
+
+  }
+}
+
+@media screen and (max-width: 493px) {
+  i, i.fa-play-circle, .player_text {
+    font-size: 10px;
+  }
+
+  .music_player .icons i, .icons_dx i {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
