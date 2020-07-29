@@ -78,7 +78,7 @@ body {
 }
 /* colors */
 
-.sidebar li, .title-nav a, .asidebar-bottom a, .main-menu li, .main-player p {
+.sidebar li, .title-nav a, .asidebar-bottom a, .main-menu li a, .main-player p {
   color: #6E6E6E;
 }
 /* MAIN */
@@ -209,6 +209,19 @@ main::after {
   padding: 10px;
   display: inline-block;
   text-transform: uppercase;
+}
+
+.main-menu li a::after {
+  content: "";
+  display: none;
+  height: 2px;
+  width: 50%;
+  background-color: #ADFF2D;
+  margin: auto;
+}
+
+.main-menu li:hover a::after{
+  display: block;
 }
 
 /* MAIN WRAP */
