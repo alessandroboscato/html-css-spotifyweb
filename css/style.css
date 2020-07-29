@@ -307,11 +307,33 @@ main::after {
 }
 
 /* footer */
-.player {
+footer {
   background-color: #282828;
   height: 80px;
+  display: flex;
+  justify-content: space-between;
 }
 
+.music_player {
+  width: calc(100% / 3);
+}
+
+.music_player ul li, .number, .bar {
+  display: inline-block;
+}
+
+.icons {
+  text-align: center;
+}
+
+.bar {
+  width: 70%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+  vertical-align: super;
+  margin: 0 5%;
+}
 /* media queries */
 @media screen and (max-width: 992px) {
   .box {
