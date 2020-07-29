@@ -162,6 +162,16 @@ main::after {
   margin-right: 4px;
 }
 
+.sidebar_xs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar_xs img {
+  width: 5%;
+}
+
 /* MAIN CONTENT */
 
 .main-content {
@@ -266,7 +276,7 @@ main::after {
 /* media queries */
 @media screen and (max-width: 992px) {
   .box {
-    width: calc(100% / 4);
+    width: calc((100% / 4) - 10px);
   }
 
   .main-player {
@@ -276,14 +286,17 @@ main::after {
 @media screen and (max-width: 768px) {
 
   .box {
-    width: calc(100% / 2);
+    width: calc((100% / 2) - 10px);
   }
+}
+
+@media screen and (max-width: 597px) {
 
   .sidebar {
-    width: 50px;
+    width: 70px;
   }
 
   .main-content {
-    width: calc(100% - 50px);
+    width: calc(100% - 70px);
   }
 }
