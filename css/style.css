@@ -163,13 +163,17 @@ main::after {
 }
 
 .sidebar_xs {
-  display: flex;
+  width: 70px;
+  height: 100%;
+  float: left;
+  background-color: #000;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .sidebar_xs img {
-  width: 5%;
 }
 
 /* MAIN CONTENT */
@@ -293,7 +297,11 @@ main::after {
 @media screen and (max-width: 597px) {
 
   .sidebar {
-    width: 70px;
+    display: none;
+  }
+
+  .sidebar_xs {
+    display: flex;
   }
 
   .main-content {
