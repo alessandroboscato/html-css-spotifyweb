@@ -68,9 +68,13 @@ body {
   font-size: 12px;
 }
 
+.upgrade a, .main-menu li {
+  font-size: 14px;
+  font-weight: bold;
+}
 /* colors */
 
-.sidebar li, .title-nav a, .asidebar-bottom a {
+.sidebar li, .title-nav a, .asidebar-bottom a, .main-menu li {
   color: #6E6E6E;
 }
 /* MAIN */
@@ -146,7 +150,6 @@ main::after {
   margin-right: 4px;
 }
 
-
 /* MAIN CONTENT */
 
 .main-content {
@@ -169,7 +172,7 @@ main::after {
   text-transform: uppercase;
   border: 1px solid #fff;
   border-radius: 18px;
-  padding: 10px;
+  padding: 10px 30px;
   margin-right: 20px;
   color: #fff;
 }
@@ -205,20 +208,21 @@ main::after {
 .main-player {
   height: calc(100% - 50px);
   overflow-y: auto;
+  padding: 10px;
 }
 
 .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 .box {
   text-align: center;
-  width: calc(100% / 6);
-  padding: 10px;
+  width: calc((100% / 6) - 10px);
+  margin: 5px;
 }
 
 .box img {
