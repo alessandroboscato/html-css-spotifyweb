@@ -154,7 +154,7 @@ main::after {
   width: 80%;
 }
 
-.asidebar-bottom h4 img {
+.asidebar-bottom h4 img, .sidebar_xs_bottom img:last-of-type {
   background-color: grey;
   border: 1px solid grey;
   border-radius: 60%;
@@ -173,8 +173,11 @@ main::after {
   align-items: center;
 }
 
-.sidebar_xs img {
+.sidebar_xs_top, .sidebar_xs_bottom {
+  width: 100%;
+  padding: 20px;
 }
+
 
 /* MAIN CONTENT */
 
