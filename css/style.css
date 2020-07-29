@@ -38,6 +38,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 /* TYPOGRAPHY */
 
 body {
@@ -137,15 +141,18 @@ main::after {
   vertical-align: middle;
 }
 
-
 .secondary-nav {
   height: calc(100% - 80px);
   overflow: hidden;
 }
 
+.title-nav {
+  height: 100px;
+}
+
 .playlist-nav {
   line-height: 30px;
-  height: 80%;
+  height: calc(100% - 100px);
   overflow-y: auto;
 }
 
@@ -214,9 +221,8 @@ main::after {
 
 .main-menu {
   display: flex;
-  line-height: 30px;
   justify-content: center;
-  max-height: 100px;
+  height: 40px;
 }
 
 .main-menu ul {
@@ -226,7 +232,7 @@ main::after {
   margin: auto;
 }
 
-.main-menu li {
+.main-menu li a {
   padding: 10px;
   display: inline-block;
   text-transform: uppercase;
@@ -253,7 +259,7 @@ main::after {
 }
 
 .main-player {
-  height: calc(100% - 50px);
+  height: calc(100% - 40px);
   overflow-y: auto;
   padding: 10px;
 }
@@ -318,7 +324,6 @@ footer {
   height: 80px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 10px;
 }
 
@@ -328,7 +333,7 @@ footer {
 }
 
 .music_player img {
-  width: 20%;
+  width: auto;
   max-height: 100%;
   vertical-align: middle;
 }
@@ -390,15 +395,21 @@ footer {
 }
 
 /* media queries */
+
 @media screen and (max-width: 992px) {
   .box {
     width: calc((100% / 4) - 10px);
   }
+}
 
+@media screen and (max-width: 922px) {
   .main-player {
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
   }
 
+  .main-menu {
+    height: 80px;
+  }
 }
 
 @media screen and (max-width: 768px) {
