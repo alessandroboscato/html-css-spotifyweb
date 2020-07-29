@@ -72,9 +72,13 @@ body {
   font-size: 14px;
   font-weight: bold;
 }
+
+.main-player {
+  font-size: 12px;
+}
 /* colors */
 
-.sidebar li, .title-nav a, .asidebar-bottom a, .main-menu li {
+.sidebar li, .title-nav a, .asidebar-bottom a, .main-menu li, .main-player p {
   color: #6E6E6E;
 }
 /* MAIN */
@@ -95,17 +99,24 @@ main::after {
 .sidebar {
   float: left;
   background-color: #000;
-  width: 300px;
+  width: 250px;
   height: 100%;
   color: #fff;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+.sidebar .logo, .sidebar .main-nav li, .sidebar .secondary-nav .title-nav, .secondary-nav .playlist-nav li, .sidebar .asidebar-bottom {
   padding-left: 20px;
 }
 
 .sidebar .logo, .sidebar .main-nav, .sidebar .asidebar-bottom {
   flex-shrink: 0;
+}
+
+.sidebar li:hover {
+  border-left: 4px solid #ADFF2D;
 }
 
 .logo i, .logo span, .title-nav i, .title-nav span {
@@ -121,6 +132,7 @@ main::after {
   padding-right: 5px;
   vertical-align: middle;
 }
+
 
 .secondary-nav {
   height: calc(100% - 80px);
@@ -156,7 +168,7 @@ main::after {
   float: left;
   background-color: #141A23;
   height: 100%;
-  width: calc(100% - 300px)
+  width: calc(100% - 250px)
 }
 
 .upgrade {
@@ -192,6 +204,7 @@ main::after {
   justify-content: center;
   margin: auto;
 }
+
 .main-menu li {
   padding: 10px;
   display: inline-block;
@@ -217,6 +230,7 @@ main::after {
   flex-wrap: wrap;
   margin-left: -5px;
   margin-right: -5px;
+  margin-bottom: 10px;
 }
 
 .box {
@@ -227,6 +241,7 @@ main::after {
 
 .box img {
   width: 100%;
+  padding-bottom: 10px;
 }
 
 /* footer */
